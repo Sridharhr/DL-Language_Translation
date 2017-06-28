@@ -1,19 +1,17 @@
 # dl-language-translation
 
 ### About
-Generative Adversarial Network (GAN) to generate celebrity face images and handwritten digits.
+Neural network machine translation using a sequence to sequence model on a dataset of English and French sentences. 
 
 ### Data
 
-* MNIST
-* CelebA
-There is helper code to download both datasets locally.
+* Small portion of English and French corpus is in the `data/` subdirectory
+* For more vocabulary train on the [WMT10 French-English corpus](http://www.statmt.org/wmt10/training-giga-fren.tar) with a GPU (and once the network is performing well on the limited dataset)
 
 ### Code
 `code.ipynb` (Jupyter notebook)
 
-* Implements Generator and Discriminator
-* Utilizes tensorflow `variable_scope` to reuse model variables appropriately
+* Implements encoder-decoer RNN using tensorflow `seq2seq`
 
 ### Testing
 
